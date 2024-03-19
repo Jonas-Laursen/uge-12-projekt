@@ -1,3 +1,5 @@
+@use "partial";
+
 h1 {
-    color: aquamarine;
+    color: partial.$text-color;
 }
