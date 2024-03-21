@@ -5,6 +5,83 @@
 $blue-color-light: #CCE7F5;
 $blue-color-dark: #154C65;
 $action-color: #E04F00;
+$header-footer-color: black;
+
+//Header
+.logo-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-column: span 1;
+    background-color: $header-footer-color;
+    padding: 1.5em;
+}
+
+.desktop-nav {
+    grid-column: span 1;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: larger;
+
+            &:hover {
+                color: $action-color;
+                transition: color 0.3s ease;
+            }
+        }
+    }
+}
+
+//Footer
+
+footer {
+    background-color: $header-footer-color;
+    padding: 30px;
+
+    .logo-footer {
+        padding-bottom: 1.5em;
+    }
+
+    p {
+        color: white;
+    }
+
+    .footer-headline {
+        font-weight: bold;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+
+        img {
+            width: 2em;
+        }
+
+
+    }
+
+    .footer-links {
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                color: $action-color;
+                transition: color 0.3s ease;
+            }
+        }
+    }
+
+
+}
 
 .cta {
     display: inline-block;
@@ -17,7 +94,7 @@ $action-color: #E04F00;
     transition: 0.4s ease;
 
     &:hover {
-        background-color: #ffff;
+        background-color: transparent;
         color: #000;
         border: 2px solid #000;
     }
@@ -25,6 +102,13 @@ $action-color: #E04F00;
 
 
 
-a, p, h1, h2, h3, h4, h5, h6 {
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Arial, Helvetica, sans-serif;
 }

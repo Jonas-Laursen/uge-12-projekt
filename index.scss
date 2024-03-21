@@ -1,6 +1,5 @@
 @use "partial";
 
-//Header
 
 
 .index-start-container {
@@ -25,10 +24,49 @@
 
 .passion {
     background-color: partial.$blue-color-light;
-    padding: 3.7em 3em;
-    margin: 2em 0;
+    padding: 4em 3em;
     p {
         color: partial.$blue-color-dark;
     }
 }
 
+.read-more-container {
+    background-color: partial.$blue-color-dark;
+    display: grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .icon-dog {
+        grid-column-start: 1;
+        align-self: center;
+        justify-self: end;
+        padding: 1.5em 3em;
+    }
+    .training-link-text {
+        grid-column-start: 2;
+        color: partial.$blue-color-light;
+        align-self: center;
+        padding: 1em;
+    }
+
+    .icon-bowl {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        align-self: center;
+        justify-self: end;
+        padding: 1.5em 3em;
+    }
+
+    .health-link-text {
+        color: partial.$blue-color-light;
+        align-self: center;
+        padding: 1em;
+    }
+
+    .cta-container {
+        grid-column-start: 3;
+        align-self: center;
+        justify-self: left;
+        padding: 0 2em;
+    }
+}

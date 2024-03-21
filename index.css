@@ -1,3 +1,60 @@
+.logo-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-column: span 1;
+  background-color: black;
+  padding: 1.5em;
+}
+
+.desktop-nav {
+  grid-column: span 1;
+}
+.desktop-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.desktop-nav ul a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+.desktop-nav ul a:hover {
+  color: #E04F00;
+  transition: color 0.3s ease;
+}
+
+footer {
+  background-color: black;
+  padding: 30px;
+}
+footer .logo-footer {
+  padding-bottom: 1.5em;
+}
+footer p {
+  color: white;
+}
+footer .footer-headline {
+  font-weight: bold;
+}
+footer .footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+footer .footer-container img {
+  width: 2em;
+}
+footer .footer-links a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer-links a:hover {
+  color: #E04F00;
+  transition: color 0.3s ease;
+}
+
 .cta {
   display: inline-block;
   padding: 12px 30px;
@@ -9,12 +66,19 @@
   transition: 0.4s ease;
 }
 .cta:hover {
-  background-color: white;
+  background-color: transparent;
   color: #000;
   border: 2px solid #000;
 }
 
-a, p, h1, h2, h3, h4, h5, h6 {
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,9 +102,45 @@ a, p, h1, h2, h3, h4, h5, h6 {
 
 .passion {
   background-color: #CCE7F5;
-  padding: 3.7em 3em;
-  margin: 2em 0;
+  padding: 4em 3em;
 }
 .passion p {
   color: #154C65;
+}
+
+.read-more-container {
+  background-color: #154C65;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.read-more-container .icon-dog {
+  grid-column-start: 1;
+  align-self: center;
+  justify-self: end;
+  padding: 1.5em 3em;
+}
+.read-more-container .training-link-text {
+  grid-column-start: 2;
+  color: #CCE7F5;
+  align-self: center;
+  padding: 1em;
+}
+.read-more-container .icon-bowl {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  align-self: center;
+  justify-self: end;
+  padding: 1.5em 3em;
+}
+.read-more-container .health-link-text {
+  color: #CCE7F5;
+  align-self: center;
+  padding: 1em;
+}
+.read-more-container .cta-container {
+  grid-column-start: 3;
+  align-self: center;
+  justify-self: left;
+  padding: 0 2em;
 }/*# sourceMappingURL=index.css.map */
