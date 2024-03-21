@@ -108,6 +108,7 @@ footer .footer-links a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;
+  margin-bottom: 2em;
 }
 .health-section .food-container {
   background-color: #CCE7F5;
