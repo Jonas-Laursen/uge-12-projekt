@@ -1,5 +1,28 @@
 @use "partial";
 
+//Header
+
+
+.index-start-container {
+    position: relative;
+    img {
+        width: 100%;
+    }
+}
+
+.text-above-image {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .button-tilmeld {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
 .passion {
     background-color: partial.$blue-color-light;
     padding: 3.7em 3em;
@@ -8,3 +31,4 @@
         color: partial.$blue-color-dark;
     }
 }
+
