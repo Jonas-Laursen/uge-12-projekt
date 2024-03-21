@@ -1,2 +1,28 @@
 @use "partial";
 
+
+/* styling af overskrift med billede bagved */
+
+h1{
+    font-size: 20vw;
+    text-transform: uppercase;
+    background-image: url(resources/sunset.jpg);
+    background-size: auto 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: move;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move{
+    from{
+        background-position: center 200%;
+    }
+
+    to{
+        background-position: center 0%;
+    }
+}
