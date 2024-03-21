@@ -1,2 +1,10 @@
 @use "partial";
 
+.passion {
+    background-color: partial.$blue-color-light;
+    padding: 3.7em 3em;
+    margin: 2em 0;
+    p {
+        color: partial.$blue-color-dark;
+    }
+}
