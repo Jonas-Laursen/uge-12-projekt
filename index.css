@@ -18,7 +18,7 @@ body {
   background-color: black;
   padding: 1.5em;
 }
-@media (max-width: 800px) {
+@media (max-width: 1281px) {
   .logo-header {
     grid-template-columns: 1fr 1fr;
   }
@@ -37,7 +37,7 @@ body {
   justify-content: space-between;
   padding: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 1281px) {
   .desktop-nav ul {
     display: flex;
     flex-direction: column;

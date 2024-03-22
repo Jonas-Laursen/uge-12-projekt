@@ -18,7 +18,7 @@ body {
   background-color: black;
   padding: 1.5em;
 }
-@media (max-width: 800px) {
+@media (max-width: 1281px) {
   .logo-header {
     grid-template-columns: 1fr 1fr;
   }
@@ -37,7 +37,7 @@ body {
   justify-content: space-between;
   padding: 0;
 }
-@media (max-width: 800px) {
+@media (max-width: 1281px) {
   .desktop-nav ul {
     display: flex;
     flex-direction: column;
@@ -205,9 +205,12 @@ h6 {
 }
 @media (max-width: 800px) {
   .know-dog-1 {
-    padding-top: 0;
+    padding: 0 1em;
     margin-top: 20px;
-    margin-bottom: 10px;
+    position: relative;
+  }
+  .know-dog-1 p {
+    margin-bottom: 0;
   }
 }
 
@@ -224,6 +227,10 @@ h6 {
 @media (max-width: 800px) {
   .know-dog-2 {
     transform: translateX(0);
+    padding: 0 1em;
+  }
+  .know-dog-2 p {
+    margin-top: 0;
   }
 }
 
@@ -247,7 +254,7 @@ h6 {
 }
 @media (max-width: 800px) {
   .dog-breeds-section {
-    margin-top: 12.5em;
+    margin-top: 4.5em;
     padding: 3.5em 0;
   }
 }

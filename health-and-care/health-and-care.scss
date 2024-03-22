@@ -1,4 +1,5 @@
 @use "../partial";
+@use "../mixin";
 
 .headline-background {
     display: flex;
@@ -36,6 +37,10 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
     margin-bottom: 2em;
+    @include mixin.respond-to("mobile") {
+        display: flex; 
+        flex-direction: column;
+    }
 
     .food-container {
         background-color: partial.$blue-color-light;
