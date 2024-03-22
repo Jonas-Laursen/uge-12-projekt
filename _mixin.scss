@@ -1,0 +1,20 @@
+$breakpoints: (
+  mobile: 800px,
+  desktop: 1281px,
+  large-desktop: 1920px,
+);
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == "mobile" {
+      @media (max-width: map-get($breakpoints, mobile)) {
+        @content;
+      } 
+
+      } 
+    @else if $breakpoint == "desktop" {
+      @media (min-width: map-get($breakpoints, desktop)) and (max-width: map-get($breakpoints, large-desktop)) {
+        @content;
+      }
+
+  }
+} 

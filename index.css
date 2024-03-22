@@ -6,12 +6,26 @@ a, p, h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  display: block;
+  margin: 0;
+}
+
 .logo-header {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   grid-column: span 1;
   background-color: black;
   padding: 1.5em;
+}
+@media (max-width: 800px) {
+  .logo-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo-header .menu-container {
+    display: grid;
+    justify-content: end;
+  }
 }
 
 .desktop-nav {
@@ -22,6 +36,12 @@ a, p, h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   padding: 0;
+}
+@media (max-width: 800px) {
+  .desktop-nav ul {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .desktop-nav ul a {
   text-decoration: none;
@@ -53,6 +73,12 @@ footer .footer-container {
 }
 footer .footer-container img {
   width: 2em;
+}
+@media (max-width: 800px) {
+  footer .footer-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 footer .footer-links a {
   text-decoration: none;
@@ -123,6 +149,11 @@ h6 {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 800px) {
+  .text-above-image {
+    top: 40%;
+  }
+}
 
 .passion {
   background-color: #CCE7F5;
@@ -138,29 +169,57 @@ h6 {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.read-more-container .icon-dog {
-  grid-column-start: 1;
+@media (max-width: 800px) {
+  .read-more-container {
+    padding-bottom: 3em;
+  }
+}
+@media (max-width: 800px) {
+  .read-more-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.read-more-container .icon-common {
   align-self: center;
   justify-self: end;
   padding: 1.5em 3em;
 }
-.read-more-container .training-link-text {
-  grid-column-start: 2;
+@media (max-width: 800px) {
+  .read-more-container .icon-common {
+    padding-bottom: 0;
+  }
+}
+.read-more-container .icon-dog {
+  grid-column-start: 1;
+}
+.read-more-container .link-text-common {
   color: #CCE7F5;
   align-self: center;
   padding: 1em;
+}
+@media (max-width: 800px) {
+  .read-more-container .link-text-common {
+    padding: 0.3em 3em;
+  }
+}
+.read-more-container .training-link-text {
+  grid-column-start: 2;
+}
+@media (max-width: 800px) {
+  .read-more-container .health-link-text {
+    padding-top: 0;
+    margin-top: 1px;
+  }
 }
 .read-more-container .icon-bowl {
   grid-row-start: 2;
   grid-column-start: 1;
-  align-self: center;
-  justify-self: end;
-  padding: 1.5em 3em;
 }
-.read-more-container .health-link-text {
-  color: #CCE7F5;
-  align-self: center;
-  padding: 1em;
+@media (max-width: 800px) {
+  .read-more-container .icon-bowl {
+    padding-top: 5em;
+  }
 }
 .read-more-container .cta-container {
   grid-column-start: 3;

@@ -1,4 +1,5 @@
 @use "../partial";
+@use "../mixin";
 
 .headline-background {
     display: flex;
@@ -35,6 +36,10 @@
     display: flex;
     background-color: partial.$blue-color-dark;
     padding: 3.5em 2em;
+    @include mixin.respond-to("mobile") {
+        display: flex; 
+        flex-direction: column;
+    }
     h3 {
         color: white;
     }
@@ -47,6 +52,10 @@
     img {
         width: 40%;
         height: auto;
+        @include mixin.respond-to("mobile") {
+            width: 100%;
+            padding-top: 2em;
+        }
     }
 }
 
@@ -61,6 +70,13 @@
     transition: transform 1s;
     padding: 2.5em;
     font-weight: bold;
+
+    @include mixin.respond-to("mobile") {
+        padding-top: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
 }
 
 .know-dog-2 {
@@ -72,11 +88,24 @@
     padding: 2.5em;
     font-style: italic;
     font-weight: bold;
+
+    @include mixin.respond-to("mobile") {
+        transform: translateX(0);
+
+
+
+
+    }
+
+    
 }
 
 .know-dog-1:hover + .know-dog-2 {
     transform: translateX(11.5em);
     color: partial.$action-color;
+    @include mixin.respond-to("mobile") {
+        transform: translateX(0);
+    }
 }
 
 .dog-breeds-section {
@@ -84,6 +113,9 @@
     flex-direction: row;
     align-items: center;
     margin-top: 15em;
+    @include mixin.respond-to("mobile") {
+        margin-top: 12.5em;
+    }
     background-color: partial.$blue-color-light;
     padding: 3.5em 2em;
 
@@ -91,11 +123,20 @@
         align-self: flex-start;
     }
 
+    @include mixin.respond-to("mobile") {
+        display: flex; 
+        flex-direction: column;
+    }
+
     .dog-breeds-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: left;
+        @include mixin.respond-to("mobile") {
+            display: flex;
+            flex-direction: column;
+        }
 
         .content-wrapper {
             display: flex;
