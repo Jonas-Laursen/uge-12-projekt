@@ -30,3 +30,28 @@
         }
     }
 }
+
+.health-section {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+
+    .food-container {
+        background-color: partial.$blue-color-light;
+        padding: 2em;
+        p {
+            color: partial.$blue-color-dark
+        }
+    }
+
+    .care-container {
+        background-color: partial.$blue-color-dark;
+        padding: 2em;
+        h3 {
+            color: white;
+        }
+        p {
+            color: partial.$blue-color-light;
+        }
+    }
+}

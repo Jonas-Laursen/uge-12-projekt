@@ -102,4 +102,27 @@ footer .footer-links a:hover {
   to {
     background-position: center 0%;
   }
+}
+
+.health-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 15px;
+}
+.health-section .food-container {
+  background-color: #CCE7F5;
+  padding: 2em;
+}
+.health-section .food-container p {
+  color: #154C65;
+}
+.health-section .care-container {
+  background-color: #154C65;
+  padding: 2em;
+}
+.health-section .care-container h3 {
+  color: white;
+}
+.health-section .care-container p {
+  color: #CCE7F5;
 }/*# sourceMappingURL=health-and-care.css.map */
