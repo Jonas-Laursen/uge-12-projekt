@@ -153,11 +153,29 @@ footer .footer-links a:hover {
 
 .dog-breeds-section {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-top: 15em;
   background-color: #CCE7F5;
   padding: 3.5em 2em;
 }
-.dog-breeds-section p {
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
+.dog-breeds-section h3 {
+  align-self: flex-start;
+}
+.dog-breeds-section .dog-breeds-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.dog-breeds-section .dog-breeds-container .content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dog-breeds-section .dog-breeds-container img {
+  padding-right: 2em;
+}
+.dog-breeds-section .dog-breeds-container p {
+  padding-left: 2em;
 }/*# sourceMappingURL=training.css.map */
