@@ -135,3 +135,9 @@ h5,
 h6 {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+$breakpoints: (
+  mobile: 800px,
+  tablet: 801px,
+  desktop: 1281px,
+);
