@@ -115,12 +115,16 @@
     margin-top: 15em;
     @include mixin.respond-to("mobile") {
         margin-top: 12.5em;
+        padding: 3.5em 0;
     }
     background-color: partial.$blue-color-light;
     padding: 3.5em 2em;
 
     h3 {
         align-self: flex-start;
+        @include mixin.respond-to("mobile") {
+            padding-left: 2em;
+        }
     }
 
     @include mixin.respond-to("mobile") {
@@ -133,23 +137,34 @@
         flex-direction: column;
         align-items: center;
         text-align: left;
-        @include mixin.respond-to("mobile") {
-            display: flex;
-            flex-direction: column;
-        }
 
         .content-wrapper {
             display: flex;
             flex-direction: row;
             align-items: center;
+            @include mixin.respond-to("mobile") {
+                display: flex;
+                flex-direction: column;
+            }
         }
 
         img {
             padding-right: 2em;
+            width: 80%;
+            @include mixin.respond-to("mobile") {
+                display: flex;
+                justify-self: center;
+                padding: 0;
+
+            }
         }
 
         p {
             padding-left: 2em;
+            @include mixin.respond-to("mobile") {
+                align-self: center;
+                padding-right: 2em;
+            }
         }
     }
 }

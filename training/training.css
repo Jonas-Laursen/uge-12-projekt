@@ -248,10 +248,16 @@ h6 {
 @media (max-width: 800px) {
   .dog-breeds-section {
     margin-top: 12.5em;
+    padding: 3.5em 0;
   }
 }
 .dog-breeds-section h3 {
   align-self: flex-start;
+}
+@media (max-width: 800px) {
+  .dog-breeds-section h3 {
+    padding-left: 2em;
+  }
 }
 @media (max-width: 800px) {
   .dog-breeds-section {
@@ -265,20 +271,34 @@ h6 {
   align-items: center;
   text-align: left;
 }
-@media (max-width: 800px) {
-  .dog-breeds-section .dog-breeds-container {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .dog-breeds-section .dog-breeds-container .content-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .dog-breeds-section .dog-breeds-container .content-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .dog-breeds-section .dog-breeds-container img {
   padding-right: 2em;
+  width: 80%;
+}
+@media (max-width: 800px) {
+  .dog-breeds-section .dog-breeds-container img {
+    display: flex;
+    justify-self: center;
+    padding: 0;
+  }
 }
 .dog-breeds-section .dog-breeds-container p {
   padding-left: 2em;
+}
+@media (max-width: 800px) {
+  .dog-breeds-section .dog-breeds-container p {
+    align-self: center;
+    padding-right: 2em;
+  }
 }/*# sourceMappingURL=training.css.map */
