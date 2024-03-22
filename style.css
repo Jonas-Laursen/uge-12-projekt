@@ -2,6 +2,10 @@ a, p, h1, h2, h3, h4, h5, h6 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+a, p, h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .logo-header {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -73,4 +77,31 @@ footer .footer-links a:hover {
   background-color: transparent;
   color: #000;
   border: 2px solid #000;
+}
+
+.cta-dark {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #E04F00;
+  color: white;
+  text-decoration: none;
+  border-radius: 45px;
+  border: 2px solid transparent;
+  transition: 0.4s ease;
+}
+.cta-dark:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
 }/*# sourceMappingURL=style.css.map */
